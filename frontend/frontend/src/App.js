@@ -48,15 +48,15 @@ function App() {
     <div className="App">
       <h1>Web Scraping Frontend</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="websiteLink">Enter URL:</label>
-        <input
+        <label htmlFor="websiteLink" className='toto'>Enter URL:</label>
+        <input class="form-control"
           type="text"
           id="websiteLink"
           value={websiteLink}
           onChange={(e) => setWebsiteLink(e.target.value)}
           required
         />
-        <button type="submit">Download</button>
+        <button type="submit" class="btn btn-primary mb-3" >Download</button>
       </form>
       <div id="acknowledgment">{acknowledgment}</div>
     </div>
